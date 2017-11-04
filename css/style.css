@@ -7,24 +7,31 @@ Dark green: #28b485
 
 */
 
-* {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     color: #777;
+    box-sizing: border-box;
     font-family: "Lato", Sans-Serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .btn:link,
 .btn:visited {
-    border-radius: 9999px;
+    border-radius: 999rem;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -33,7 +40,7 @@ body {
 }
 
 .btn::after {
-    border-radius: 9999px;
+    border-radius: 999rem;
     content: '';
     display: inline-block;
     height: 100%;
@@ -46,8 +53,8 @@ body {
 }
 
 .btn:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    transform: translateY(-.3rem);
 }
 
 .btn:hover::after {
@@ -56,8 +63,8 @@ body {
 }
 
 .btn:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    transform: translateY(-.1rem);
 }
 
 .btn-cta {
@@ -68,7 +75,7 @@ body {
 .btn-white {
     background-color: #FFF;
     color: #777;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
 }
 
 .btn-white::after {
@@ -86,12 +93,11 @@ body {
     height: 95vh;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .heading-primary {
     color: #FFF;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
     text-transform: uppercase;
     backface-visibility: hidden;
 }
@@ -99,28 +105,28 @@ body {
 .heading-primary-main {
     animation: moveInLeft 1s ease-out;
     display: block;
-    font-size: 60px;
+    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
 }
 
 .heading-primary-sub {
     animation: moveInRight 1s ease-out;
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.2px;
+    letter-spacing: 1.75rem;
 }
 
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(10rem);
     }
 
     80% {
-        transform: translateY(-10px);
+        transform: translateY(-1rem);
     }
 
     100% {
@@ -132,11 +138,11 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
 
     80% {
-        transform: translateX(10px);
+        transform: translateX(10rem);
     }
 
     100% {
@@ -148,11 +154,11 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(40px);
+        transform: translateX(40rem);
     }
 
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
 
     100% {
@@ -162,13 +168,13 @@ body {
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .logo-box {
-    left: 40px;
+    left: 4rem;
     position: absolute;
-    top: 40px;
+    top: 4rem;
 }
 
 .text-box {
