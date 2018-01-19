@@ -1,0 +1,7 @@
+// Calculates the width of a grid column
+@function column-width($column-span, $column-count, $gutter) {
+  @return calc(
+      (((100% - (#{$gutter} * (#{$column-count} - 1))) / #{$column-count}) * #{$column-span})
+      + (#{$gutter} * (#{$column-span} - 1))
+  );
+}

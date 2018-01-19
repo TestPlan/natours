@@ -1,0 +1,16 @@
+{
+  "name": "Natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "repository": "git@github.com:TestPlan/natours.git",
+  "author": "Ian Markind <ianmarkind@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css",
+    "sass:watch": "node-sass sass/main.scss css/style.css -w"
+  }
+}
