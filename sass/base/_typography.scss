@@ -1,8 +1,8 @@
 .heading-primary {
+  backface-visibility: hidden;
   color: $color-white;
   margin-bottom: 6rem;
   text-transform: uppercase;
-  backface-visibility: hidden;
 
   &--main {
     animation: moveInLeft 1s ease-out;
@@ -18,5 +18,22 @@
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.75rem;
+  }
+}
+
+.heading-secondary {
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  color: transparent;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all .2s;
+  -webkit-background-clip: text;
+
+  &:hover {
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
   }
 }
