@@ -79,11 +79,27 @@ body {
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     transform: skewY(2deg) skewX(15deg) scale(1.1); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(last-child) {
+    margin-bottom: 3rem; }
+
 .util-center-text {
   text-align: center; }
 
-.util-margin-bottom-medium {
+.util-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.util-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.util-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 .btn:link, .btn:visited {
   border-radius: 999rem;
@@ -126,6 +142,25 @@ body {
   padding: 1.5rem 4rem; }
   .btn--white::after {
     background-color: #FFF; }
+
+.btn-text:link, .btn-text:visited {
+  border-bottom: 1px solid #55C57A;
+  color: #55C57A;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: .3rem;
+  text-decoration: none;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55C57A;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  color: #FFF;
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .row {
   margin: 0 auto;
