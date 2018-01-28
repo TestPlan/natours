@@ -22,15 +22,13 @@
 }
 
 .heading-secondary {
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-  color: transparent;
+  @include gradient-text;
   display: inline-block;
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: all .2s;
-  -webkit-background-clip: text;
 
   &:hover {
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);

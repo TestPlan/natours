@@ -1,7 +1,23 @@
+@mixin background-image-linear-gradient($image-path, $direction-x: right, $direction-y: bottom, $color-start: $color-primary-light, $color-end: $color-primary-dark) {
+  background-image: linear-gradient(
+          to $direction-x $direction-y,
+          rgba($color-start, .8),
+          rgba($color-end, .8)),
+  url($image-path);
+}
+
 @mixin clearfix {
   &::after {
     content: '';
     display: table;
     clear: both;
   }
+}
+
+@mixin gradient-text {
+  background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+  background-clip: text;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
 }
