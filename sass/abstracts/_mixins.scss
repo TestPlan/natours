@@ -1,8 +1,8 @@
-@mixin background-image-linear-gradient($image-path, $direction-x: right, $direction-y: bottom, $color-start: $color-primary-light, $color-end: $color-primary-dark) {
+@mixin background-image-linear-gradient($image-path, $direction-x: right, $direction-y: bottom, $color-start: $color-primary-light, $color-end: $color-primary-dark, $opacity: .8) {
   background-image: linear-gradient(
           to $direction-x $direction-y,
-          rgba($color-start, .8),
-          rgba($color-end, .8)),
+          rgba($color-start, $opacity),
+          rgba($color-end, $opacity)),
   url($image-path);
 }
 
