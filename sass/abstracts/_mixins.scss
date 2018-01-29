@@ -1,9 +1,16 @@
-@mixin background-image-linear-gradient($image-path, $direction-x: right, $direction-y: bottom, $color-start: $color-primary-light, $color-end: $color-primary-dark, $opacity: .8) {
-  background-image: linear-gradient(
-          to $direction-x $direction-y,
-          rgba($color-start, $opacity),
-          rgba($color-end, $opacity)),
-  url($image-path);
+@mixin background-image-linear-gradient($image-path: 'none', $direction: to right bottom, $color-start: $color-primary-light, $color-end: $color-primary-dark, $opacity: .8) {
+  @if $image-path == 'none' {
+    background-image: linear-gradient(
+            $direction,
+            rgba($color-start, $opacity),
+            rgba($color-end, $opacity));
+  } @else {
+    background-image: linear-gradient(
+            $direction,
+            rgba($color-start, $opacity),
+            rgba($color-end, $opacity)),
+    url($image-path);
+  }
 }
 
 @mixin clearfix {

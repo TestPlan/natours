@@ -1,16 +1,25 @@
 // COLORS - naming convention from https://coolors.co/
 $color-black: #000;
+$color-brilliant-azure: #2998FF;
+$color-han-purple: #5643FA;
 $color-jungle-green: #28B485;
+$color-orange-crayola: #FF7730;
 $color-paris-green: #55C57A;
 $color-pastel-green: #7ED56F;
+$color-selective-yellow: #FFB900;
 $color-sonic-silver: #777;
 $color-white: #FFF;
 $color-white-smoke: #F7F7F7;
 
-// MAIN THEME COLORS
+// THEME COLORS
 $color-primary: $color-paris-green;
 $color-primary-dark: $color-jungle-green;
 $color-primary-light: $color-pastel-green;
+
+$color-secondary-light: $color-selective-yellow;
+$color-secondary-dark: $color-orange-crayola;
+$color-tertiary-light: $color-brilliant-azure;
+$color-tertiary-dark: $color-han-purple;
 
 // FONT
 $default-font-size: 1.6rem;
