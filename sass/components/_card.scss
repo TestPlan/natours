@@ -84,9 +84,16 @@
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
 
-
     &--1 {
       @include background-image-linear-gradient('none', to right bottom, $color-secondary-light, $color-secondary-dark, .85)
+    }
+
+    &--2 {
+      @include background-image-linear-gradient('none', to right bottom, $color-primary-light, $color-primary-dark, .85)
+    }
+
+    &--3 {
+      @include background-image-linear-gradient('none', to right bottom, $color-tertiary-light, $color-tertiary-dark, .85)
     }
   }
 
@@ -99,7 +106,36 @@
 
     &--1 {
       @include background-image-linear-gradient('../img/nat-5.jpg', to right bottom, $color-secondary-light, $color-secondary-dark, 1);
-
     }
+
+    &--2 {
+      @include background-image-linear-gradient('../img/nat-6.jpg', to right bottom, $color-primary-light, $color-primary-dark, 1);
+    }
+
+    &--3 {
+      @include background-image-linear-gradient('../img/nat-7.jpg', to right bottom, $color-tertiary-light, $color-tertiary-dark, 1);
+    }
+  }
+
+  // Front Side Styles
+  &__cta {
+    color: $color-white;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  &__price-text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 8rem;
   }
 }

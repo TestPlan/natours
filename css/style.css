@@ -103,9 +103,16 @@ body {
 .util-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
+.util-margin-top-big {
+  margin-top: 8rem; }
+
+.util-margin-top-huge {
+  margin-top: 10rem; }
+
 .btn:link, .btn:visited {
   border-radius: 999rem;
   display: inline-block;
+  padding: 1.5rem 4rem;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -138,10 +145,15 @@ body {
   animation: moveInBottom 1s ease-out .5s;
   animation-fill-mode: backwards; }
 
+.btn--green {
+  background-color: #55C57A;
+  color: #FFF; }
+  .btn--green::after {
+    background-color: #55C57A; }
+
 .btn--white {
   background-color: #FFF;
-  color: #777;
-  padding: 1.5rem 4rem; }
+  color: #777; }
   .btn--white::after {
     background-color: #FFF; }
 
@@ -224,6 +236,10 @@ body {
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__picture {
     background-blend-mode: screen;
     background-size: cover;
@@ -232,6 +248,25 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg"); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../img/nat-6.jpg"); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
+  .card__cta {
+    color: #FFF;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; }
+  .card__price-text {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 8rem; }
 
 .composition {
   position: relative;
@@ -349,4 +384,4 @@ body {
 .section-tours {
   background-color: #F7F7F7;
   margin-top: -10rem;
-  padding: 25rem 0 50rem 0; }
+  padding: 25rem 0 15rem 0; }
