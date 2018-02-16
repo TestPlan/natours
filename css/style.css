@@ -316,6 +316,29 @@ body {
     font-size: 6rem;
     margin-bottom: 1rem; }
 
+.story {
+  background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 6rem 6rem 6rem 9rem;
+  transform: skewX(-12deg);
+  width: 75%; }
+  .story__img {
+    height: 100%; }
+  .story__shape {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    float: left;
+    height: 15rem;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    width: 15rem; }
+  .story__text {
+    transform: skewX(12deg); }
+
 .row {
   margin: 0 auto;
   max-width: 114rem; }
@@ -380,6 +403,10 @@ body {
   transform: skewY(-7deg); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-stories {
+  background-color: #F7F7F7;
+  padding: 15rem 0; }
 
 .section-tours {
   background-color: #F7F7F7;
