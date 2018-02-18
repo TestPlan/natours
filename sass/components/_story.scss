@@ -8,8 +8,35 @@
   transform: skewX(-12deg);
   width: 75%;
 
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    filter: brightness(80%) blur(3px);
+    transform: translateX(-4rem) scale(1);
+  }
+
+  &__caption {
+    backface-visibility: hidden;
+    color: $color-white;
+    font-size: 1.7rem;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, 20%);
+    transition: all .5s;
+  }
+
   &__img {
+    backface-visibility: hidden;
     height: 100%;
+    transition: all .5s;
+    transform: translateX(-4rem) scale(1.4);
   }
 
   &__shape {
@@ -17,6 +44,7 @@
     clip-path: circle(50% at 50% 50%);
     float: left;
     height: 15rem;
+    position: relative;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
