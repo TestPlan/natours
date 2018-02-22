@@ -109,6 +109,21 @@ body {
 .util-margin-top-huge {
   margin-top: 10rem; }
 
+.bg-video {
+  left: 0;
+  height: 100%;
+  opacity: .15;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%; }
+
 .btn:link, .btn:visited {
   border-radius: 999rem;
   display: inline-block;
@@ -182,6 +197,7 @@ body {
   -moz-perspective: 150rem;
   position: relative; }
   .card__side {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -317,7 +333,7 @@ body {
     margin-bottom: 1rem; }
 
 .story {
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   font-size: 1.6rem;
@@ -427,8 +443,8 @@ body {
     transform: skewY(7deg); }
 
 .section-stories {
-  background-color: #F7F7F7;
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }
 
 .section-tours {
   background-color: #F7F7F7;
