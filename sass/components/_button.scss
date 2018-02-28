@@ -1,7 +1,7 @@
 .btn {
   &:link,
   &:visited {
-    border-radius: 999rem;
+    border-radius: $border-radius-max;
     display: inline-block;
     padding: 1.5rem 4rem;
     position: relative;
@@ -11,7 +11,7 @@
   }
 
   &::after {
-    border-radius: 999rem;
+    border-radius: $border-radius-max;
     content: '';
     display: inline-block;
     height: 100%;
