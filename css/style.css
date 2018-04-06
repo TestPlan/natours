@@ -507,6 +507,43 @@ body {
     top: 40%;
     transform: translate(-50%, -50%); }
 
+.footer {
+  background-color: #333;
+  color: #F7F7F7;
+  font-size: 1.4rem;
+  padding: 10rem 0; }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    background-color: #333;
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55C57A;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.2); }
+  .footer__list {
+    list-style: none; }
+  .footer__logo {
+    width: 15rem; }
+  .footer__logo-box {
+    margin-bottom: 8rem;
+    text-align: center; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/nat-10.jpg");
   background-size: cover;
