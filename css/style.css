@@ -456,6 +456,43 @@ body {
   .story__text {
     transform: skewX(12deg); }
 
+.footer {
+  background-color: #333;
+  color: #F7F7F7;
+  font-size: 1.4rem;
+  padding: 10rem 0; }
+  .footer__copyright {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    width: 80%;
+    float: right; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    background-color: #333;
+    color: inherit;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #55C57A;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.2); }
+  .footer__list {
+    list-style: none; }
+  .footer__logo {
+    width: 15rem; }
+  .footer__logo-box {
+    margin-bottom: 8rem;
+    text-align: center; }
+  .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+
 .row {
   margin: 0 auto;
   max-width: 114rem; }
@@ -507,42 +544,68 @@ body {
     top: 40%;
     transform: translate(-50%, -50%); }
 
-.footer {
-  background-color: #333;
-  color: #F7F7F7;
-  font-size: 1.4rem;
-  padding: 10rem 0; }
-  .footer__copyright {
-    border-top: 1px solid #777;
-    padding-top: 2rem;
-    width: 80%;
-    float: right; }
-  .footer__item {
-    display: inline-block; }
-    .footer__item:not(:last-child) {
-      margin-right: 1.5rem; }
-  .footer__link:link, .footer__link:visited {
-    background-color: #333;
-    color: inherit;
+.navigation__background {
+  background-image: radial-gradient(#7ED56F, #28B485);
+  border-radius: 50%;
+  height: 6rem;
+  position: fixed;
+  right: 6.5rem;
+  top: 6.5rem;
+  width: 6rem;
+  z-index: 1000;
+  transform: scale(100); }
+
+.navigation__button {
+  background-color: #FFF;
+  border-radius: 50%;
+  height: 7rem;
+  position: fixed;
+  right: 6rem;
+  top: 6rem;
+  width: 7rem;
+  z-index: 1020; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFF 50%);
+  background-size: 230%;
+  color: #FFF;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 200;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .4s; }
+  .navigation__link:link span, .navigation__link:visited span {
     display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .2s; }
-  .footer__link:hover, .footer__link:active {
-    color: #55C57A;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.2); }
-  .footer__list {
-    list-style: none; }
-  .footer__logo {
-    width: 15rem; }
-  .footer__logo-box {
-    margin-bottom: 8rem;
-    text-align: center; }
-  .footer__navigation {
-    border-top: 1px solid #777;
-    padding-top: 2rem;
-    display: inline-block; }
+    margin-right: 1.5rem; }
+
+.navigation__link:active, .navigation__link:hover {
+  background-position: 99%;
+  color: #55C57A;
+  transform: translateX(2rem); }
+
+.navigation__list {
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  text-align: right;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1010; }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../../img/nat-10.jpg");
